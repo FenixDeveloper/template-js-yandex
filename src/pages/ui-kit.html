@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="App created by Yandex.Practicum" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Document</title>
+	</head>
+	<body class="page">
+		<div class="page__wrapper">
+			<header class="page__header">
+				<h1 class="page__title">{PROJECT_NAME}</h1>
+			</header>
+			<main class="page__content">
+				<section class="page__section">
+					<p class="page__subtitle">Subtitle</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+						exercitationem.
+					</p>
+				</section>
+				<section class="page__section page__section_row">
+					<button type="button" class="button">BUTTON</button>
+					<button type="button" class="button button_text">BUTTON</button>
+					<button type="button" class="button button_secondary">BUTTON</button>
+					<button type="button" class="button button_primary">BUTTON</button>
+					<button type="button" class="button button_outlined">BUTTON</button>
+				</section>
+				<section class="page__section">
+					<form class="form">
+						<h2 class="page__subtitle">Form title</h2>
+
+						<label class="form__field">
+							<span class="form__label">Input label</span>
+							<input type="text" class="form__input" />
+							<span class="form__help">Help text</span>
+						</label>
+
+						<label class="form__field">
+							<span class="form__label">Input label</span>
+							<input type="text" class="form__input" />
+							<span class="form__help form__help_error">Error text</span>
+						</label>
+
+						<button type="submit" class="button button_primary">SUBMIT</button>
+					</form>
+				</section>
+				<section class="page__section">
+					<button
+						type="button"
+						class="button button_outlined"
+						data-modal="modal-example"
+					>
+						MODAL
+					</button>
+				</section>
+			</main>
+			<footer class="page__footer">
+				<div class="page__copyright">
+					Сделано в
+					<a
+						href="https://practicum.yandex.ru/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img
+							class="page__logo"
+							src="<%=require('../images/logo.svg')%>"
+							alt="Яндекс Практикум"
+						/>
+					</a>
+				</div>
+			</footer>
+		</div>
+
+		<div class="modal" id="modal-example">
+			<div class="modal__container modal__container_up">
+				<button
+					class="icon-xmark-solid modal__close"
+					aria-label="close"
+				></button>
+
+				<p>{content}</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+@use 'variables' as *;
+@use '../vendor/normalize';
+@use '../vendor/ys/fonts';
+@use '../vendor/fa/Glyphter';
+
+@use '../common.blocks/page';
+@use '../common.blocks/button';
+@use '../common.blocks/form';
+@use '../common.blocks/modal';
